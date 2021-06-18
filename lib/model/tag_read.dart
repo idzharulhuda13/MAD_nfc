@@ -21,8 +21,12 @@ class TagReadModel with ChangeNotifier {
             systemCode: felica.currentSystemCode,
             requestCode: FeliCaPollingRequestCode.noRequest,
             timeSlot: FeliCaPollingTimeSlot.max1,
-          )).manufacturerParameter;
-        } catch (e) { print('=== $e ==='); return null; } // skip tag discovery
+          ))
+              .manufacturerParameter;
+        } catch (e) {
+          print('=== $e ===');
+          return null;
+        } // skip tag discovery
       }
     }
 
