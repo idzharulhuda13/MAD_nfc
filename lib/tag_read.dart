@@ -23,6 +23,7 @@ class TagReadPage extends StatelessWidget {
       appBar: AppBar(
         title: Text('Tag - Read'),
         centerTitle: true,
+        backgroundColor: Color(0xff001241),
       ),
       floatingActionButton: FloatingActionButton(
         onPressed: () => startSession(
@@ -30,6 +31,7 @@ class TagReadPage extends StatelessWidget {
           handleTag: Provider.of<TagReadModel>(context, listen: false).handleTag,
         ),
         child: Icon(Icons.settings_input_antenna),
+        backgroundColor: Color(0xff001241),
       ),
       floatingActionButtonLocation: FloatingActionButtonLocation.centerFloat,
       body: SafeArea(
@@ -39,7 +41,10 @@ class TagReadPage extends StatelessWidget {
             children: [
               ListCellGroup(children: [
                 ListCellButton(
-                  title: Center(child: Text('Start a scan click button below')),
+                  title: Center(child: Text(
+                    'Start a scan click button below',
+                    style: TextStyle(color: Color(0xff001241)),
+                  )),
                   onTap: () {},
                   // onTap: () => startSession(
                   //   context: context,
