@@ -28,8 +28,10 @@ List infoTol = [
 ];
 
 List infoTransJakarta = [
-  {"rute": "RUTE", "tarif": "TARIF"},
-  {"rute": "Merak - Jakarta", "tarif": "67500"},
+  {"rute": "Jam", "tarif": "TARIF"},
+  {"rute": "05.00-07.00", "tarif": "2000"},
+  {"rute": "07.00-24.00", "tarif": "3500"},
+  {"rute": "24.00-05.00", "tarif": "3500"},
 ];
 
 List infoMrt = [
